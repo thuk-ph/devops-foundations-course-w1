@@ -1,6 +1,6 @@
 # TODO-STEP 1: Define the Workflow Name
 # Uncomment the following line and replace <WORKFLOW_NAME> with a descriptive name. For example: Python CI/CD Pipeline
-name: <WORKFLOW NAME>
+name: Python CI/CD Pipeline
 
 # TODO-STEP 2: Define the Trigger Events
 # Uncomment the following lines to trigger the workflow on push and pull request events
@@ -58,6 +58,6 @@ jobs:
       # TODO-STEP 4c: Add command to run tests
       # Hint: Use pytest to run your test cases
       - name: Run tests
-        run: pytest
+        run: pytest --import-mode=importlib
 
 # Remember to remove the '#' to uncomment lines when filling in the placeholders
